@@ -1,0 +1,9 @@
+.tiles-container {
+    display: flex;
+    overflow-x: scroll;
+    background-color: greenyellow;
+}
+
+.tile {
+    flex: 1;
+}
