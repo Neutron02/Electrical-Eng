@@ -1,6 +1,7 @@
 import './App.css';
 import TitlePage from './Components/TitlePage';
 import Pane from './Components/Pane';
+import Carousel from './Components/Carousel';
 
 const tileData = [
   // {title: 'Tile 1', popupText: 'Popup text for tile 1'},
@@ -22,8 +23,10 @@ function App() {
   return (
     <div className="App">
       <TitlePage />
-      <div id="selctions">
-        <Pane tilesData={tileData} />
+      <div id="selections">
+        {/* <Pane tilesData={tileData} />
+         */}
+         <Carousel tilesData={tileData}/>
       </div>
     </div>
   );

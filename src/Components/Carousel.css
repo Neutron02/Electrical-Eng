@@ -1,0 +1,9 @@
+.carousel__container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll; /* or overflow-x: auto; */
+}
+
+.carousel__container::-webkit-scrollbar{
+    display: none;
+}

@@ -9,10 +9,14 @@
 
 body{
   margin: 0 !important;
-  display: block !important;
+  /* display: block !important; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+div{
+  display: block;
 }
