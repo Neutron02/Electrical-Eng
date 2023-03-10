@@ -1,0 +1,30 @@
+
+> electrical-eng-app@0.1.0 start
+> kill-port 3000 && react-scripts start
+
+Could not kill process on port 3000. No process running on port.
+Something is already running on port 3000.
+
+> electrical-eng-app@0.1.0 start
+> bash startup.sh
+
+Checking if process is running on port 3000...
+Starting npm...
+Something is already running on port 3000.
+Here
+
+> electrical-eng-app@0.1.0 start
+> bash startup.sh
+
+Checking if process is running on port 3000...
+Starting npm...
+Something is already running on port 3000.
+Here
+
+> electrical-eng-app@0.1.0 start
+> bash startup.sh
+
+Checking if process is running on port 3000...
+Starting npm...
+Something is already running on port 3000.
+Here

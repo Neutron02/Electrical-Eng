@@ -1,4 +1,4 @@
-.tile{
+/* .tile{
     border: solid 1px #000;
     border-radius: 10px;
 
@@ -6,7 +6,7 @@
     width: 200px;
     height: 200px;
     margin-right: 10px;
-      
+
 }
 
 .tile-title{
@@ -22,3 +22,306 @@
     color: #fff;
     text-shadow: 0 0 10px #000;
 }
+
+.popup-text-tile{
+    width: 500px;
+    display: flex;
+
+} */
+
+.tile {
+    border: solid 1px #000;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .tile:hover {
+    width: 500px;
+  }
+  
+  .tile-title {
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    position: relative;
+    z-index: 1;
+
+  }
+  
+  /* .tile-title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: background-color 0.5s ease;
+    background-size: 0% 100%;
+    background-position: center;
+  } */
+  
+  /* .tile-title::after {
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    right: 0;
+
+
+    transition: background-color 0.5s ease;
+  } */
+  
+ /*.tile:hover .tile-title::before {
+    
+    background-size:100% 100%;
+  } 
+  */
+
+  .popup-text {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+  }
+  
+  /* .tile:hover .popup-text-container {
+    display: block;
+  } */
+  
+  .Image {
+    width: 30%;
+  }
+  
+/* 
+ .tile{
+    border: solid 1px #000;
+    border-radius: 10px;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.tile:hover {
+    width: 500px;
+}
+
+.tile-title{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    position: relative;
+}
+
+.tile-title::before{
+    position: absolute;
+    content:"";
+    left:0;
+    right:0;
+
+    transition:background-color 0.5s ease;
+}
+
+.tile-title::after{
+    background-color: red;
+}
+.tile:hover .tile-title::before {
+    background-color: #ff0000;
+  }
+.tile:hover .tile-title::after{
+background-color: orange;
+}
+.popup-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+.tile:hover .popup-text-container{
+    display: block;
+} */
+.Image{
+    width: 30%;
+}
+
+
+/*
+.tile {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border: solid 1px #000;
+  border-radius: 10px;
+}
+
+.tile:hover {
+  width: 500px;
+}
+
+.tile-title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tile-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transition: background-color 0.5s ease;
+}
+
+.tile:hover .tile-title::before {
+  background-color: #ff0000;
+}
+
+.popup-text-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border: solid 1px #000;
+}
+
+.tile:hover .popup-text-container {
+  display: block;
+}
+
+/*
+
+
+/* .custom-tile{
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+     height:60px;
+    background-color: rgb(27, 192, 27);
+     ;
+ }  */
+ /* .popup-text{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+}
+.Image{
+    width: 30%;
+}
+ .tile {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex: 0 0 auto;
+
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    width: 100px;
+    color: #fff;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+  
+  .tile:hover {
+    letter-spacing: 3px;
+    width: 500px;
+  }
+  
+  .tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translate(0);
+    transition: 0.5s;
+    filter: blur(0px);
+  }
+  
+.tile:hover::before {
+    transform: skewX(45deg) translate(200px);
+  }
+  
+.tile::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #f00;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5;
+  }
+  
+.tile:hover::after {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+  }
+  
+.tile::before,
+.tile::after {
+    background: #ff1f71;
+    box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
+      0 0 60px #ff1f71;
+  }
+  
+.tile:nth-child(2)::before,
+.tile:nth-child(2)::after {
+    background: #2db2ff;
+    box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
+      0 0 60px #2db2ff;
+  }
+  
+.tile:nth-child(3)::before,
+.tile:nth-child(3)::after {
+    background: #1eff45;
+    box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
+      0 0 60px #1eff45;
+  }
+   */
+@keyframes gradient {
+    0% {
+      background-position: 0 bottom,100% bottom;
+    }
+    /* 0% {
+      background-position: 200% bottom, -100% bottom;
+    } */
+  }
+  

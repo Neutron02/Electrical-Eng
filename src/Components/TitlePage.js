@@ -3,7 +3,7 @@ import { TimelineMax } from "gsap";
 import './TitlePage.css'
 
 const TitlePage = () => {
-    const text = "Lorem Ipsum Foo Bar"; // WILL BE REPLACED WITH "ElectricalEng.Org"
+    const text = "ElectricalEng.Org"; // WILL BE REPLACED WITH "ElectricalEng.Org"
     const [textToShow, setDisplayText] = useState(text);
     const [currText, setText] = useState("");
     const [index, setIndex] = useState(0);
