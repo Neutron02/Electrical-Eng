@@ -1,8 +1,9 @@
 import './App.css';
-import TitlePage from './Components/TitlePage';
-import Pane from './Components/Pane';
-import Carousel from './Components/Carousel';
-
+import TitlePage from './Components/StartupPage/TitlePage';
+import Pane from './Components/StartupPage/Pane';
+import Carousel from './Components/StartupPage/Carousel';
+import NavBar from './Components/NavBarComp/NavBar';
+import FeaturedSection from './Components/StartupPage/FeaturedSection';
 const tileData = [
   {title: 'Transistor', popupText: 'What is a transistor?+ \nA transistor is a semiconductor device often made up of n-type and p-type materials. It is used to amplify or switch electronic signals and electrical power. It is composed of three terminals: the emitter, the base, and the collector. '},
   {title: 'Resistor', popupText: "A resistor is a device made up of an insulating material. It's main purpose is to resistor current (to lower the change in charge over time)."},
@@ -22,13 +23,21 @@ for(let i = 0; i < 15; i++) {
 
 function App() { 
   return (
+    // default div is display: block
     <div className="App">
-      <TitlePage />
+      <NavBar />
+      {/* titlepage's display is "flex", and position is "sticky" */}
+      <TitlePage /> 
+      {/* selections is  */}
       <div id="selections">
-        {/* <Pane tilesData={tileData} />
+        {/* this will be removed probably <Pane tilesData={tileData} />
          */}
+         {/* carousel is display flex */}
          <Carousel tilesData={tileData}/>
       </div>
+      <FeaturedSection />
+
+
     </div>
   );
 }
