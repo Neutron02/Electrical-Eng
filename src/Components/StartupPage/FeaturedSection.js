@@ -1,16 +1,14 @@
 import React from 'react';
 import './FeaturedSection.css';
 
-const FeaturedSection = () => {
+const FeaturedSection = (props) => {
   return (
-    <section className="featuredSection">
-      <h2 className="featuredTitle">Featured Content</h2>
+    <section className="featuredSection" id={props.id}>
+      <h2 className="featuredTitle">{props.title}</h2>
       <div className="contentWrapper">
         <div className="textContent">
           <p>
-            This is a sample paragraph to display in the featured section. You
-            can replace this content with your own text and images to make it
-            even more appealing to your users.
+            {props.paragraph}
           </p>
         </div>
         <div className="imageContent">
