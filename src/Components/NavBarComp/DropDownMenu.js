@@ -1,13 +1,13 @@
 import React from 'react';
 import './DropDownMenu.css';
 
-const DropDownMenu = () => {
-  const subItems = [
-    { id: 1, name: 'Our Story', link: "/ourstory" },
-    { id: 2, name: 'Team', link: "/ourteam" },
-    { id: 3, name: 'Locations', link: "/ourlocations" },
-  ];
-
+const DropDownMenu = (props) => {
+  // const subItems = [
+  //   { id: 1, name: 'Our Story', link: "/ourstory" },
+  //   { id: 2, name: 'Team', link: "/ourteam" },
+  //   { id: 3, name: 'Locations', link: "/ourlocations" },
+  // ];
+  const subItems = props.subItems
   return (
     <div className="dropDownMenu">
       {subItems.map((item) => (
