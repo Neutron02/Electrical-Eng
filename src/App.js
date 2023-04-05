@@ -8,6 +8,7 @@ import FeaturedSection from './Components/StartupPage/FeaturedSection';
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import OurStory from "../src/Components/About/OurStory";
+import C_Home from './Components/C-Programming/C_Home';
 
 // ... your tileData array ...
 
@@ -46,6 +47,7 @@ function App() {
             
         <Routes>
           <Route path="/OurStory" element={<OurStory />}/>
+          <Route path='C-programming' element={<C_Home />} />
         </Routes>
       </div>
     </Router>
