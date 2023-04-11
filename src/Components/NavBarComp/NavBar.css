@@ -3,6 +3,7 @@
     justify-content: center;
     background-color: #f0f0f0;
     padding: 10px 0;
+    /* position: sticky; */ /* need to come back and fix this*/
   }
   
   .navList {

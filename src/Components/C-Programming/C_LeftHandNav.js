@@ -4,7 +4,8 @@ import "./C_LeftHandNav.css"
 const navItems = [
     { id: 1, name: "How to start C on MAC OS (Easier)", link: "/C-programming/startup-mac"},
     { id: 2, name: "How to start on Windows (Kinda harder)", link: "/C-programming/startup-windows"},
-    { id: 3, name: "How to start on Linux (Kinda harder)", link: "/C-programming/startup-windows"}
+    { id: 3, name: "How to start on Linux (Kinda harder)", link: "/C-programming/startup-windows"},
+    { id: 4, name: "Online GCC compiler and Examples", link: "/C-programming/compiler"}
 
 
 ]

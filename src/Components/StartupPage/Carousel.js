@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Tile from './Tile';
 import './Carousel.css';
 
-
 const Carousel = (props) => {
 //   const TileData = props.tilesData.map((tile, index) => (
 //     <Tile key={index} index={index}title={tile.title} popupText={tile.popupText} />
